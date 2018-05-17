@@ -19,22 +19,22 @@
 package org.wso2.carbon.integration.common.extensions.utils;
 
 public class AutomationXpathConstants {
-    public static final String ADMIN_USER_PASSWORD = "//%s/tenant[@domain='%s']/admin/user/password";
-    public static final String USERS_NODE = "//%s/tenant[@domain='%s']/users";
-    public static final String USER_NODE = "//%s/tenant[@domain='%s']/users/user";
-    public static final String ADMIN_USER_USERNAME = "//%s/tenant[@domain='%s']/admin/user/userName";
-    public static final String TENANT_USER_USERNAME = "//%s/tenant[@domain='%s']/users/user[@key='%s']/userName";
-    public static final String SUPER_TENANT_DOMAIN = "//superTenant/tenant[@key='superTenant']/@domain";
-    public static final String TENANT_USER_PASSWORD = "//%s/tenant[@domain='%s']/users/user[@key='%s']/password";
-    public static final String PRODUCT_GROUP = "//productGroup";
-    public static final String SELENIUM_BROWSER_TYPE = "//tools/selenium/browser/browserType";
-    public static final String SELENIUM_REMOTE_WEB_DRIVER_URL = "//tools/selenium/remoteDriverUrl";
-    public static final String CHROME_WEB_DRIVER_URL = "//tools/selenium/browser/webdriverPath";
-    public static final String USER_MANAGEMENT_SUPER_TENANT_DOMAIN = "//superTenant/tenant/@domain";
+    public static final String ADMIN_USER_PASSWORD = "//ns:%s/ns:tenant[@domain='%s']/ns:admin/ns:user/ns:password";
+    public static final String USERS_NODE = "//ns:%s/ns:tenant[@domain='%s']/ns:users";
+    public static final String USER_NODE = "//ns:%s/ns:tenant[@domain='%s']/ns:users/ns:user";
+    public static final String ADMIN_USER_USERNAME = "//ns:%s/ns:tenant[@domain='%s']/ns:admin/ns:user/ns:userName";
+    public static final String TENANT_USER_USERNAME = "//ns:%s/ns:tenant[@domain='%s']/ns:users/ns:user[@key='%s']/ns:userName";
+    public static final String SUPER_TENANT_DOMAIN = "//ns:superTenant/ns:tenant[@key='superTenant']/@domain";
+    public static final String TENANT_USER_PASSWORD = "//ns:%s/ns:tenant[@domain='%s']/ns:users/ns:user[@key='%s']/ns:password";
+    public static final String PRODUCT_GROUP = "//ns:productGroup";
+    public static final String SELENIUM_BROWSER_TYPE = "//ns:tools/ns:selenium/ns:browser/ns:browserType";
+    public static final String SELENIUM_REMOTE_WEB_DRIVER_URL = "//ns:tools/ns:selenium/ns:remoteDriverUrl";
+    public static final String CHROME_WEB_DRIVER_URL = "//ns:tools/ns:selenium/ns:browser/ns:webdriverPath";
+    public static final String USER_MANAGEMENT_SUPER_TENANT_DOMAIN = "//ns:superTenant/ns:tenant/@domain";
 
 
     public static final String CLUSTERING_ENABLED = "clusteringEnabled";
-    public static final String TENANTS_NODE = "//tenants";
+    public static final String TENANTS_NODE = "//ns:tenants";
     public static final String TENANTS = "tenants";
     public static final String SUPER_TENANT = "superTenant";
     public static final String DOMAIN = "domain";
@@ -42,14 +42,14 @@ public class AutomationXpathConstants {
     public static final String NAME = "name";
     public static final String TYPE = "type";
     public static final String WEB_CONTEXT_ENABLED = "webContextEnabled";
-    public static final String WEB_CONTEXT_ROOT = "//test/root";
-    public static final String DATA_SOURCE_NAME = "//datasources/datasource/name";
-    public static final String DATA_SOURCE_URL = "//datasources/datasource/url";
-    public static final String DATA_SOURCE_DRIVER_CLASS_NAME = "//datasources/datasource/driverClassName";
-    public static final String DATA_SOURCE_DB_USER_NAME = "//datasources/datasource/username";
-    public static final String DATA_SOURCE_DB_PASSWORD = "//datasources/datasource/password";
+    public static final String WEB_CONTEXT_ROOT = "//ns:test/ns:root";
+    public static final String DATA_SOURCE_NAME = "//ns:datasources/ns:datasource/ns:name";
+    public static final String DATA_SOURCE_URL = "//ns:datasources/ns:datasource/ns:url";
+    public static final String DATA_SOURCE_DRIVER_CLASS_NAME = "//ns:datasources/ns:datasource/ns:driverClassName";
+    public static final String DATA_SOURCE_DB_USER_NAME = "//ns:datasources/ns:datasource/ns:username";
+    public static final String DATA_SOURCE_DB_PASSWORD = "//ns:datasources/ns:datasource/ns:password";
 
-	public static final String ROLES_NODE = "//userManagement/roles";
-	public static final String PERMISSIONS_NODE = "//userManagement/roles/role[@name='%s']/permissions";
-	public static final String TENANT_USER_ROLES = "//%s/tenant[@domain='%s']/users/user[@key='%s']/roles";
+	public static final String ROLES_NODE = "//ns:userManagement/ns:roles";
+	public static final String PERMISSIONS_NODE = "//ns:userManagement/ns:roles/ns:role[@name='%s']/ns:permissions";
+	public static final String TENANT_USER_ROLES = "//ns:%s/ns:tenant[@domain='%s']/ns:users/ns:user[@key='%s']/ns:roles";
 }
